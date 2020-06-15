@@ -1,0 +1,237 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans TC";
+  letter-spacing: 0.1em;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.nav-bar {
+  text-transform: capitalize;
+  box-shadow: 0px 12px 16px 0 rgba(0, 0, 0, 0.14),
+    0 0px 0px 0 rgba(0, 0, 0, 0.19);
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.nav-item {
+  color: rgb(2, 0, 0);
+}
+
+.nav-item :hover {
+  color: #ffcc29;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.btn-link:hover {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.card-container {
+  margin: 1em;
+}
+.card {
+  position: relative;
+  margin-top: 1em;
+  padding: 0.5em;
+  box-shadow: 0px 12px 16px 0 rgba(0, 0, 0, 0.14),
+    0 0px 0px 0 rgba(0, 0, 0, 0.19);
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.card-title {
+  font-size: 1em;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "Noto Sans TC";
+  text-align: left;
+}
+
+.card-title:hover {
+  color: #ffcc29;
+  text-decoration: none;
+}
+
+.card-time {
+  text-align: left;
+}
+
+.img-avatar {
+  border-radius: 50%;
+  width: 6%;
+  display: inline;
+}
+
+.headersLine {
+  width: 80%;
+  height: 2px;
+  background-color: black;
+  text-align: left;
+  margin-bottom: 2em;
+}
+
+.btn-edit {
+  float: right;
+  margin: 0;
+}
+
+.news-details {
+  letter-spacing: 0;
+  line-height: 2em;
+  text-align: justify;
+  padding: 0;
+}
+
+.news-title {
+  margin-top: 0.5em;
+}
+
+.card-news-tag {
+  position: absolute;
+  bottom: auto;
+  right: 16px;
+  border: 0.1em;
+  border-style: solid;
+  margin-top: 0.5em;
+  padding: 0.2em;
+  border-radius: 10%;
+  color: black;
+  background-color: #ffcc29;
+  font-size: 0.7em;
+  font-weight: bold;
+  font-family: "Noto Sans TC";
+}
+
+.show-card-footer {
+  margin-top: 0.5em;
+}
+.card-news-time {
+  position: absolute;
+  bottom: auto;
+  right: 16px;
+  padding: 0.2em;
+  color: black;
+  font-size: 0.7em;
+}
+
+.advert-card-img {
+  width: 100%;
+  height: 100%;
+}
+.advert-card {
+  margin-top: 1em;
+  width: 100%;
+}
+
+.price-widget {
+  width: 100%;
+}
+.related-news {
+  margin-top: 3em;
+  margin-left: 0;
+  color: #ffcc29;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+}
+.intro {
+  color: black;
+  font-weight: bold;
+  margin-top: 1em;
+  text-transform: capitalize;
+}
+
+.content {
+  font-weight: 400;
+  color: black;
+  letter-spacing: normal !important;
+  word-spacing: 0.1em;
+  line-height: 2em;
+  text-align: justify;
+  padding-left: 1em;
+}
+.crypto-img {
+  width: auto;
+  height: auto;
+}
+
+.footer {
+  flex-shrink: 0;
+  text-align: center;
+  background-color: #2d2926ff;
+  color: Black;
+  margin-top: 5em;
+  padding: 0 1em;
+}
+.footer-header {
+  margin-top: 1em;
+  text-align: left;
+  color: #ffcc29;
+  text-transform: capitalize;
+  font-size: 1.5em;
+}
+.footer-header-item {
+  text-align: center;
+  padding: 0.2em;
+  text-transform: capitalize;
+  color: white;
+  text-decoration: none;
+  margin-left: 0.8em;
+}
+.footer-header-item:hover {
+  color: #ffcc29;
+  text-decoration: none;
+}
+.footer-signature {
+  text-align: center;
+  color: rgb(63, 62, 61);
+  padding: auto;
+}
+.footer-card {
+  color: black;
+}
+.footer-hr {
+  background-color: gold;
+}
+.add-form {
+  font-weight: bold;
+  color: #2d2926ff;
+  margin: 1em;
+  padding: 2em;
+}
+.add-form h3 {
+  color: #ffcc29;
+}
+
+.author-text {
+  margin: 0.5em;
+}
+
+#back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #ffcc29;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#back-to-top:hover {
+  background-color: white;
+  color: #ffcc29;
+}
