@@ -4,13 +4,13 @@ import { UncontrolledCarousel } from "reactstrap";
 const items = [
   {
     src: "https://s.imgur.com/images/logo-1200-630.jpg?2",
-    altText: "Slide 1",
+    caption: "Slide 1",
     header: "Slide 1 Header",
     key: "1",
   },
   {
     src: "https://s.imgur.com/images/logo-1200-630.jpg?2",
-    altText: "Slide 2",
+    caption: "Slide 2",
     header: "Slide 2 Header",
     key: "2",
   },

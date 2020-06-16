@@ -46,21 +46,17 @@ const Header = (props) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink>
-                <Link className="nav-item" to={"/"}>
-                  News
-                </Link>
-              </NavLink>
+              <Link className="nav-item" to={"/"}>
+                News
+              </Link>
             </NavItem>
             <NavItem>
-              <NavLink>
-                <Link className="nav-item" to={"/Markets"}>
-                  Market Analysis
-                </Link>
-              </NavLink>
+              <Link className="nav-item" to={"/Markets"}>
+                Market Analysis
+              </Link>
             </NavItem>
-            <UncontrolledDropdown nav inNavbar drop-down>
-              <DropdownToggle nav caret className="nav-item">
+            <UncontrolledDropdown nav inNavbar drop-down="true">
+              <DropdownToggle nav caret>
                 <Link className="nav-item" to={"/basics"}>
                   Cryptopedia
                 </Link>

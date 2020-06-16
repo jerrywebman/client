@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import firebase from "./services/firebase";
 import {
@@ -13,7 +13,6 @@ import {
 } from "reactstrap";
 import { StateContext } from "./services/StateContext";
 import AdvertTop from "./Adverts/AdvertTop";
-import { moreData, fetchData } from "./services/StateContext";
 
 // import { fetchMore } from "./userExperience/customFunctions";
 // import { BackToTop } from "./userExperience/BackToTop";
@@ -66,7 +65,7 @@ function News() {
 
       <Row xs="1" sm="1" md="3" lg="3">
         {blogs.map((item) => (
-          <Col>
+          <Col key={item.id}>
             <Card
               className="card"
               key={item.title}

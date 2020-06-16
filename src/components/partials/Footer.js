@@ -12,18 +12,14 @@ class Footer extends React.Component {
             <h3 className="footer-header">Coinnewsafrica</h3>
             <hr className="footer-hr"></hr>
             <Row>
-              <Link to="/tandc">
-                <Hash to="tandc#policy">
-                  <h6 className="footer-header-item"> Privacy Policy</h6>
-                </Hash>
-              </Link>
+              <Hash to="tandc#policy">
+                <h6 className="footer-header-item"> Privacy Policy</h6>
+              </Hash>
             </Row>
             <Row>
-              <Link to="/tandc">
-                <Hash to="tandc#services">
-                  <h6 className="footer-header-item">Terms of Service</h6>
-                </Hash>
-              </Link>
+              <Hash to="tandc#services">
+                <h6 className="footer-header-item">Terms of Service</h6>
+              </Hash>
             </Row>
           </Col>
 
@@ -49,7 +45,11 @@ class Footer extends React.Component {
               </Link>
             </Row>
             <Row>
-              <a href="https://t.me/coinnewsafrica_com" target="_blank">
+              <a
+                href="https://t.me/coinnewsafrica_com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <h6 className="footer-header-item">Telegram</h6>
               </a>
             </Row>
@@ -57,6 +57,7 @@ class Footer extends React.Component {
               <a
                 href="https://www.youtube.com/channel/UCtKY5nHveznyjtwEF7Nlfxg"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <h6 className="footer-header-item">Youtube</h6>
               </a>
@@ -65,12 +66,17 @@ class Footer extends React.Component {
               <a
                 href="https://www.instagram.com/coinnewsafrica_/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <h6 className="footer-header-item">Instagram</h6>
               </a>
             </Row>
             <Row>
-              <a href="https://twitter.com/coinnewsafrica?s=08" target="_blank">
+              <a
+                href="https://twitter.com/coinnewsafrica?s=08"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <h6 className="footer-header-item">Twitter</h6>
               </a>
             </Row>
@@ -85,7 +91,7 @@ class Footer extends React.Component {
             <hr className="footer-hr"></hr>
 
             <Row>
-              <Link>
+              <Link to="/about">
                 <h6 className="footer-header-item">About</h6>
               </Link>
             </Row>
@@ -106,11 +112,9 @@ class Footer extends React.Component {
               </Link>
             </Row>
             <Row>
-              <Link>
-                <Hash to="advertise#form">
-                  <h6 className="footer-header-item">Contact</h6>
-                </Hash>
-              </Link>
+              <Hash to="advertise#form">
+                <h6 className="footer-header-item">Contact</h6>
+              </Hash>
             </Row>
             <Row>
               <Link to="/soon">
@@ -119,11 +123,9 @@ class Footer extends React.Component {
               </Link>
             </Row>
             <Row>
-              <Link>
-                <Hash to="advertise#wallet">
-                  <h6 className="footer-header-item">Support us</h6>
-                </Hash>
-              </Link>
+              <Hash to="advertise#wallet">
+                <h6 className="footer-header-item">Support us</h6>
+              </Hash>
             </Row>
           </Col>
         </Row>

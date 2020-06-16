@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Card, CardTitle, Col, Row, CardFooter } from "reactstrap";
+import { Card, CardTitle, Col, Row } from "reactstrap";
 import { Link } from "react-router-dom";
 
 import firebase from "./services/firebase";

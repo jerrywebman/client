@@ -15,6 +15,7 @@ export default function MarketAnalysis() {
         <Col>
           <Card>
             <iframe
+              title="three"
               height="315"
               src="https://www.youtube.com/embed/oYMHKjVeJaw"
               frameborder="0"
@@ -26,6 +27,7 @@ export default function MarketAnalysis() {
         <Col>
           <Card>
             <iframe
+              title="two"
               height="315"
               src="https://www.youtube.com/embed/oYMHKjVeJaw"
               frameborder="0"
@@ -44,6 +46,7 @@ export default function MarketAnalysis() {
         <Col>
           <Card>
             <iframe
+              title="one"
               height="315"
               src="https://www.youtube.com/embed/oYMHKjVeJaw"
               frameborder="0"
@@ -55,6 +58,7 @@ export default function MarketAnalysis() {
         <Col>
           <Card>
             <iframe
+              title="four"
               height="315"
               src="https://www.youtube.com/embed/oYMHKjVeJaw"
               frameborder="0"

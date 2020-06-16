@@ -33,7 +33,7 @@ export default function Basics() {
           <Card className="crypto-img">
             <img
               src="/images/bitcoin.jpg"
-              alt="coinnewsafrica-bitcoin-image"
+              alt="coinnewsafrica-bitcoin"
               style={{ width: "100%", height: "100%" }}
             />
           </Card>
@@ -67,7 +67,7 @@ export default function Basics() {
           <Card className="crypto-img">
             <img
               src="/images/bitcoin.jpg"
-              alt="coinnewsafrica-bitcoin-image"
+              alt="coinnewsafrica-bitcoin"
               style={{ width: "100%", height: "100%" }}
             />
           </Card>
@@ -85,7 +85,7 @@ export default function Basics() {
           <Card className="crypto-img">
             <img
               src="/images/bitcoin.jpg"
-              alt="coinnewsafrica-bitcoin-image"
+              alt="coinnewsafrica-bitcoin"
               style={{ width: "100%", height: "100%" }}
             />
           </Card>
@@ -131,7 +131,7 @@ export default function Basics() {
           <Card className="crypto-img">
             <img
               src="/images/bitcoin.jpg"
-              alt="coinnewsafrica-bitcoin-image"
+              alt="coinnewsafrica-bitcoin"
               style={{ width: "100%", height: "100%" }}
             />
           </Card>
@@ -146,7 +146,7 @@ export default function Basics() {
           <Card className="crypto-img">
             <img
               src="/images/bitcoin.jpg"
-              alt="coinnewsafrica-bitcoin-image"
+              alt="coinnewsafrica-bitcoin"
               style={{ width: "100%", height: "100%" }}
             />
           </Card>
@@ -176,7 +176,7 @@ export default function Basics() {
           <Card className="crypto-img">
             <img
               src="/images/bitcoin.jpg"
-              alt="coinnewsafrica-bitcoin-image"
+              alt="coinnewsafrica-bitcoin"
               style={{ width: "100%", height: "100%" }}
             />
           </Card>
@@ -223,7 +223,7 @@ export default function Basics() {
           <Card className="crypto-img">
             <img
               src="/images/bitcoin.jpg"
-              alt="coinnewsafrica-bitcoin-image"
+              alt="coinnewsafrica-bitcoin"
               style={{ width: "100%", height: "100%" }}
             />
           </Card>
@@ -240,7 +240,7 @@ export default function Basics() {
           <Card className="crypto-img">
             <img
               src="/images/bitcoin.jpg"
-              alt="coinnewsafrica-bitcoin-image"
+              alt="coinnewsafrica-bitcoin"
               style={{ width: "100%", height: "100%" }}
             />
           </Card>

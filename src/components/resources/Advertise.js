@@ -40,7 +40,7 @@ export default function Advertise() {
               <img
                 className=""
                 src="/images/globe.svg"
-                alt="coinnewsafrica-bitcoin-image"
+                alt="coinnewsafrica-bitcoin"
                 style={{ width: "20%", height: "20%" }}
               />
             </Row>
@@ -59,7 +59,7 @@ export default function Advertise() {
               <img
                 className=""
                 src="/images/globe.svg"
-                alt="coinnewsafrica-bitcoin-image"
+                alt="coinnewsafrica-bitcoin"
                 style={{ width: "20%", height: "20%" }}
               />
             </Row>
@@ -85,7 +85,7 @@ export default function Advertise() {
             <img
               className=""
               src="/images/shot.svg"
-              alt="coinnewsafrica-bitcoin-image"
+              alt="coinnewsafrica-bitcoin"
               style={{ width: "100%", height: "100%" }}
             />
           </Card>
@@ -102,7 +102,7 @@ export default function Advertise() {
             <img
               className=""
               src="/images/sponsored.svg"
-              alt="coinnewsafrica-bitcoin-image"
+              alt="coinnewsafrica-bitcoin"
               style={{ width: "100%", height: "100%" }}
             />
           </Card>
@@ -112,7 +112,7 @@ export default function Advertise() {
             <img
               className=""
               src="/images/explain.svg"
-              alt="coinnewsafrica-bitcoin-image"
+              alt="coinnewsafrica-bitcoin"
               style={{ width: "100%", height: "100%" }}
             />
           </Card>{" "}
@@ -122,7 +122,7 @@ export default function Advertise() {
             <img
               className=""
               src="/images/banner.svg"
-              alt="coinnewsafrica-bitcoin-image"
+              alt="coinnewsafrica-bitcoin"
               style={{ width: "100%", height: "100%" }}
             />
           </Card>{" "}
@@ -133,7 +133,7 @@ export default function Advertise() {
             <img
               className=""
               src="/images/photo.svg"
-              alt="coinnewsafrica-bitcoin-image"
+              alt="coinnewsafrica-bitcoin"
               style={{ width: "100%", height: "100%" }}
             />
           </Card>{" "}
@@ -143,7 +143,7 @@ export default function Advertise() {
             <img
               className=""
               src="/images/analysis.svg"
-              alt="coinnewsafrica-bitcoin-image"
+              alt="coinnewsafrica-bitcoin"
               style={{ width: "100%", height: "100%" }}
             />
           </Card>{" "}
@@ -153,7 +153,7 @@ export default function Advertise() {
             <img
               className=""
               src="/images/press.svg"
-              alt="coinnewsafrica-bitcoin-image"
+              alt="coinnewsafrica-bitcoin"
               style={{ width: "100%", height: "100%" }}
             />
           </Card>{" "}
@@ -212,11 +212,10 @@ export default function Advertise() {
             />
 
             <Button
-              style={{ marginTop: "2rem" }}
               block
               type="submit"
               outline
-              style={{ color: "#ffcc29", fontSize: "2em" }}
+              style={{ color: "#ffcc29", fontSize: "2em", marginTop: "2rem" }}
               className="btn-class"
               // onClick={onCreate}
             >
