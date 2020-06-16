@@ -14,6 +14,10 @@ import Basics from "./components/resources/Basics";
 import { Container } from "reactstrap";
 import { AuthProvider } from "./components/services/Auth";
 import Login from "./components/forms/Login";
+import ComingSoon from "./components/static/ComingSoon";
+import Error from "./components/static/Error";
+import About from "./components/resources/About";
+import TermsAndConditions from "./components/resources/TermsAndConditions";
 
 function App() {
   return (
@@ -31,6 +35,10 @@ function App() {
             <Route path="/Basics" component={Basics} />
             <Route path="/AddNews" component={NewsForm} />
             <Route path="/cnasecret" component={Login} />
+            <Route path="/soon" component={ComingSoon} />
+            <Route path="/tandc" component={TermsAndConditions} />
+            <Route path="/about" component={About} />
+            <Route component={Error} />
           </Switch>
         </Container>
         <Footer />

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Col, Row, Card } from "reactstrap";
+import { HashLink as Hash } from "react-router-hash-link";
 
 class Footer extends React.Component {
   render() {
@@ -11,13 +12,17 @@ class Footer extends React.Component {
             <h3 className="footer-header">Coinnewsafrica</h3>
             <hr className="footer-hr"></hr>
             <Row>
-              <Link>
-                <h6 className="footer-header-item"> Privacy Policy</h6>
+              <Link to="/tandc">
+                <Hash to="tandc#policy">
+                  <h6 className="footer-header-item"> Privacy Policy</h6>
+                </Hash>
               </Link>
             </Row>
             <Row>
-              <Link>
-                <h6 className="footer-header-item">Terms of Use</h6>
+              <Link to="/tandc">
+                <Hash to="tandc#services">
+                  <h6 className="footer-header-item">Terms of Service</h6>
+                </Hash>
               </Link>
             </Row>
           </Col>
@@ -28,7 +33,7 @@ class Footer extends React.Component {
             <hr className="footer-hr"></hr>
 
             <Row>
-              <Link>
+              <Link to="/soon">
                 <h6 className="footer-header-item">Coming Soon</h6>
               </Link>
             </Row>
@@ -38,33 +43,39 @@ class Footer extends React.Component {
             <hr className="footer-hr"></hr>
 
             <Row>
-              <Link>
+              <Link to="/">
                 {" "}
                 <h6 className="footer-header-item">News</h6>
               </Link>
             </Row>
             <Row>
-              <Link>
+              <a href="https://t.me/coinnewsafrica_com" target="_blank">
                 <h6 className="footer-header-item">Telegram</h6>
-              </Link>
+              </a>
             </Row>
             <Row>
-              <Link>
+              <a
+                href="https://www.youtube.com/channel/UCtKY5nHveznyjtwEF7Nlfxg"
+                target="_blank"
+              >
                 <h6 className="footer-header-item">Youtube</h6>
-              </Link>
+              </a>
             </Row>
             <Row>
-              <Link>
+              <a
+                href="https://www.instagram.com/coinnewsafrica_/"
+                target="_blank"
+              >
                 <h6 className="footer-header-item">Instagram</h6>
-              </Link>
+              </a>
             </Row>
             <Row>
-              <Link>
+              <a href="https://twitter.com/coinnewsafrica?s=08" target="_blank">
                 <h6 className="footer-header-item">Twitter</h6>
-              </Link>
+              </a>
             </Row>
             <Row>
-              <Link>
+              <Link to="/soon">
                 <h6 className="footer-header-item">Facebook</h6>
               </Link>
             </Row>
@@ -79,35 +90,39 @@ class Footer extends React.Component {
               </Link>
             </Row>
             <Row>
-              <Link>
+              <Link to="/advertise">
                 <h6 className="footer-header-item">Advertise</h6>
               </Link>
             </Row>
             <Row>
-              <Link>
+              <Link to="/soon">
                 <h6 className="footer-header-item">Events</h6>
               </Link>
             </Row>
 
             <Row>
-              <Link>
+              <Link to="/soon">
                 <h6 className="footer-header-item">Careers</h6>
               </Link>
             </Row>
             <Row>
               <Link>
-                <h6 className="footer-header-item">Contact</h6>
+                <Hash to="advertise#form">
+                  <h6 className="footer-header-item">Contact</h6>
+                </Hash>
               </Link>
             </Row>
             <Row>
-              <Link>
+              <Link to="/soon">
                 {" "}
                 <h6 className="footer-header-item">Partners</h6>
               </Link>
             </Row>
             <Row>
               <Link>
-                <h6 className="footer-header-item">Support us</h6>
+                <Hash to="advertise#wallet">
+                  <h6 className="footer-header-item">Support us</h6>
+                </Hash>
               </Link>
             </Row>
           </Col>
@@ -116,7 +131,7 @@ class Footer extends React.Component {
           <Col>
             <Card className="footer-card">
               <h6 className="footer-signature">
-                Coinnewsafrica.com All Right Reserved
+                2017 - 2020 Coinnewsafrica.com All Right Reserved
               </h6>
             </Card>
           </Col>
