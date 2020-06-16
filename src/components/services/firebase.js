@@ -1,22 +1,13 @@
 import firebase from "firebase";
 
 const config = {
-  // apiKey: apiKey,
-  // authDomain: authDomain,
-  // databaseURL: databaseURL,
-  // projectId: projectId,
-  // storageBucket: storageBucket,
-  // messagingSenderId: messagingSenderId,
-  // appId: appIdHeroku,
-
-  apiKey: "AIzaSyBlOxKRglQBCyljw2cuSuBMlR4zShxCd3w",
-  authDomain: "coinnewsafrica-react.firebaseapp.com",
-  databaseURL: "https://coinnewsafrica-react.firebaseio.com",
-  projectId: "coinnewsafrica-react",
-  storageBucket: "coinnewsafrica-react.appspot.com",
-  messagingSenderId: "161765178638",
-  appId: "1:161765178638:web:6960efe055589cbc4f6b5f",
-  // };
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  databaseURL: process.env.REACT_APP_DATABASE_URL,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID,
 };
 
 // Initialize Firebase

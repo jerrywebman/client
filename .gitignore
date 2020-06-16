@@ -5,9 +5,12 @@
 /.pnp
 .pnp.js
 
+# api keys
+.env
+
 # testing
 /coverage
-/src/components/services/firebase.js
+# /src/components/services/firebase.js
 
 # production
 /build
