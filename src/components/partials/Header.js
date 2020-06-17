@@ -46,17 +46,21 @@ const Header = (props) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <Link className="nav-item" to={"/"}>
-                News
-              </Link>
+              <NavLink>
+                <Link className="nav-item" to={"/"}>
+                  News
+                </Link>
+              </NavLink>
             </NavItem>
             <NavItem>
-              <Link className="nav-item" to={"/Markets"}>
-                Market Analysis
-              </Link>
+              <NavLink>
+                <Link className="nav-item" to={"/Markets"}>
+                  Market Analysis
+                </Link>
+              </NavLink>
             </NavItem>
-            <UncontrolledDropdown nav inNavbar drop-down="true">
-              <DropdownToggle nav caret>
+            <UncontrolledDropdown nav inNavbar drop-down>
+              <DropdownToggle nav caret className="nav-item">
                 <Link className="nav-item" to={"/basics"}>
                   Cryptopedia
                 </Link>
@@ -102,14 +106,15 @@ const Header = (props) => {
           </Nav>
           <NavbarText>
             {!currentUser ? (
-              <Button
-                href="/Advertise"
-                outline
-                style={{ color: "#ffcc29" }}
-                className="btn-class"
-              >
-                Advertise
-              </Button>
+              <Link to="/Advertise">
+                <Button
+                  outline
+                  style={{ color: "#ffcc29" }}
+                  className="btn-class"
+                >
+                  Advertise
+                </Button>
+              </Link>
             ) : (
               <Button
                 href=""
