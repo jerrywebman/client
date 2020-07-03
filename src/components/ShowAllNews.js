@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Card, CardTitle, Col, Row } from "reactstrap";
 import { Link } from "react-router-dom";
+import TextTruncate from "react-text-truncate";
 
 import firebase from "./services/firebase";
 
@@ -11,7 +12,7 @@ export default function ShowAllNews() {
   useEffect(() => {
     const fetchData = async () => {
       const db = firebase.firestore();
-      const data = await db.collection("news").get();
+      const data = await db.collection("news").limit(4).get();
       setBlogs(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
     };
     fetchData();
@@ -44,7 +45,13 @@ export default function ShowAllNews() {
                     style={{ color: "#000" }}
                     onClick={onRedirect}
                   >
-                    {item.title}
+                    <TextTruncate
+                      line={3}
+                      element="span"
+                      truncateText="..."
+                      text={item.title}
+                      TextTruncateChild={<a href="#"></a>}
+                    />
                   </Link>
                 </CardTitle>
               </Col>

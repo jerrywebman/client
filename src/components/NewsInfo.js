@@ -83,7 +83,7 @@ export default class NewsInfo extends Component {
                 </div>
                 <h4 className="news-title">{this.state.blog.title}</h4>
                 <CardText className="card-news-time">
-                  {this.state.blog.created}
+                  {this.state.blog.datePretty}
                 </CardText>
               </CardBody>
               <img

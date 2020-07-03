@@ -32,7 +32,7 @@ const Header = (props) => {
         expand="md"
         className="nav-bar"
         light
-        sticky="top"
+        // sticky="top"
         style={{ backgroundColor: "white" }}
       >
         <NavbarBrand href="/">

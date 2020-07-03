@@ -189,7 +189,7 @@ export default class NewsEdit extends Component {
               placeholder="tag related to the post"
               name="date"
               className="mb-3"
-              value={this.state.tag}
+              value={this.state.tagTwo}
               onChange={this.onChange}
             />
             <Label>Third Tag</Label>

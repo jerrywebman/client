@@ -1,4 +1,10 @@
-import React, { useContext } from "react";
+import React, {
+  useContext,
+  useRef,
+  useCallback,
+  useState,
+  useEffect,
+} from "react";
 import { Link } from "react-router-dom";
 import firebase from "./services/firebase";
 import {
@@ -14,48 +20,33 @@ import {
 import { StateContext } from "./services/StateContext";
 import AdvertTop from "./Adverts/AdvertTop";
 
-// import { fetchMore } from "./userExperience/customFunctions";
-// import { BackToTop } from "./userExperience/BackToTop";
-
 function News() {
   const { blogs, setBlogs } = useContext(StateContext);
-  // const [loadMore, setLoadMore] = useState(loading);
+  // const [moreBlogs, setMoreBlogs] = useState(blogs);
 
-  const handleLoadMore = async () => {
-    console.log("button clicked");
-    // STILL WORKING HERE
-    var lastVisible = blogs[blogs.length - 1];
-    console.log("last", lastVisible);
-    // console.log("lengths", blogs.length);
-    const db = firebase.firestore();
-    const next = await db
-      .collection("news")
-      .orderBy("title")
-      .startAfter(lastVisible)
-      .limit(2)
-      .get()
-      .then(function (querySnapshot) {
-        setBlogs(
-          querySnapshot.docs.map((doc) => ({
-            ...doc.data(),
-            id: doc.id,
-            loading: true,
-          }))
-        );
-      });
-  };
-
-  //checking the window size
-  // const [windowHeight, setWindowHeight] = useState(window.innerHeight);
-
-  // const handleResize = () => {
-  //   setWindowHeight(window.innerHeight);
-  // };
-
-  // useEffect(() => {
-  //   window.addEventListener("resize", handleResize);
-  //   return () => {};
-  // }, []);
+  //view all news
+  useEffect(() => {
+    const fetchData = async () => {
+      const db = firebase.firestore();
+      let docRef = await db
+        .collection("news")
+        .orderBy("created")
+        .limit(12)
+        .get()
+        .then(function (querySnapshot) {
+          // var lastVisible = querySnapshot.docs[querySnapshot.docs.length - 1];
+          setBlogs(
+            querySnapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id }))
+          );
+          // var next = db
+          //   .collection("news")
+          //   .orderBy("title")
+          //   .startAfter(lastVisible)
+          //   .limit(2);
+        });
+    };
+    fetchData();
+  }, []);
 
   return (
     <>
@@ -83,12 +74,15 @@ function News() {
                     {item.title}
                   </Link>
                 </CardTitle>
-                <hr></hr>
+                {/* <hr></hr> */}
                 <CardText>
                   <small style={{ bottom: "5px" }} className="text-muted">
-                    Author : {item.author} |{" "}
+                    Author: {item.author}{" "}
                   </small>
-                  <small className="text-muted card-time">{item.created}</small>
+                  <br></br>
+                  <small className="text-muted card-time">
+                    Created: {item.datePretty}
+                  </small>
                 </CardText>
               </CardBody>
             </Card>
@@ -96,7 +90,7 @@ function News() {
         ))}
       </Row>
       <Row>
-        <Button onClick={() => handleLoadMore()}>Load More</Button>
+        {/* <Button onClick={() => handleLoadMore()}>Load More</Button> */}
         <AdvertTop />
       </Row>
       {/* <BackToTop /> */}

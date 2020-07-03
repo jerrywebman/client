@@ -164,6 +164,13 @@ body {
   line-height: 2em;
   padding-left: 1em;
 }
+
+.content-advert-header {
+  color: #ffcc29;
+  word-spacing: 0.1em;
+  text-align: center;
+  padding: 0 3em;
+}
 .content-advert {
   font-weight: 500;
   color: black;

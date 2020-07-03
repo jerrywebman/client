@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Col } from "reactstrap";
+
 export default function About() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <h3 className="intro">Welcome, get to know more about us here</h3>

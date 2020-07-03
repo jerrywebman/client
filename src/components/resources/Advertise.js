@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import {
   Card,
@@ -12,6 +12,10 @@ import {
 } from "reactstrap";
 
 export default function Advertise() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
       <Helmet>
@@ -45,6 +49,9 @@ export default function Advertise() {
               />
             </Row>
             <Row>
+              <h3 className="content-advert-header">
+                Get Global Reach With Us
+              </h3>
               <h6 className="content-advert">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -64,6 +71,9 @@ export default function Advertise() {
               />
             </Row>
             <Row>
+              <h3 className="content-advert-header">
+                Trust, Loyalty & Integrity
+              </h3>
               <h6 className="content-advert">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -230,13 +240,10 @@ export default function Advertise() {
             <h4 className="wallet-card">Our Official Bitcoin Address</h4>
             <hr></hr>
             <h5 className="wallet-card-text">
-              xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+              3Nu5sbyKSvwF1yDbWenzkjJLG3pv1Joeci
             </h5>
             <h5 className="wallet-card-text">
-              xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-            </h5>
-            <h5 className="wallet-card-text">
-              xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+              3NVGiPvXTAbWinNCFDReopJ1X198UvvMHo
             </h5>
           </Card>
         </Col>
@@ -245,13 +252,10 @@ export default function Advertise() {
             <h4 className="wallet-card"> Our Official Ethereum Address</h4>
             <hr></hr>
             <h5 className="wallet-card-text">
-              xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+              0x529bE29F234e0096E4fC0D2e9858a6C43e63D1AA
             </h5>
             <h5 className="wallet-card-text">
-              xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-            </h5>
-            <h5 className="wallet-card-text">
-              xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+              0x315Fb394ba16311E02bBF8711Dd936343b65681C
             </h5>
           </Card>
         </Col>

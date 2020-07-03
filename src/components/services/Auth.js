@@ -22,7 +22,7 @@ export const AuthProvider = ({ children }) => {
           width: "10rem",
           height: "10rem",
           color: "#ffcc29",
-          margin: "50vh 50vw",
+          margin: "50vh 40vw",
         }}
         type="grow"
       />
